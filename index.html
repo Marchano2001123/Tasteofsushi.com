@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Taste of Sushi</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      height: 90px;
+    }
+
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 20px 0;
+      color: #e63946;
+    }
+
+    p {
+      margin-bottom: 20px;
+      max-width: 600px;
+    }
+
+    .menu-button {
+      background-color: #e63946;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 20px;
+    }
+
+    /* Slider */
+    .slider-container {
+      width: 90%;
+      max-width: 600px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 30px 0;
+      position: relative;
+    }
+
+    .slider-track {
+      display: flex;
+      transition: transform 1s ease;
+    }
+
+    .slider-track img {
+      min-width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .dots-container {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .dot.active {
+      background-color: #e63946;
+    }
+
+    /* Review Ticker */
+    .review-ticker-section {
+      margin-top: 40px;
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 20px 0;
+      border-top: 2px solid #e63946;
+      border-bottom: 2px solid #e63946;
+      width: 100%;
+    }
+
+    .review-ticker-section h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #e63946;
+    }
+
+    .review-ticker {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .review-ticker-content {
+      display: inline-block;
+      padding-left: 100%;
+      animation: ticker 160s linear infinite;
+    }
+
+    @keyframes ticker {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .review {
+      display: inline-block;
+      margin-right: 80px;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    footer {
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html">
+    <img src="sushi.jpg.jpg" alt="Taste of Sushi Logo" class="logo">
+  </a>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="over ons.html">Over ons</a></li>
+      <li><a href="bestellen.html">Bestellen</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Welkom bij Taste of Sushi</h2>
+  <p> Ontdek de lekkerste sushi, onze specialiteiten en hoe je kunt bestellen. Vers, verfijnd en met passie bereid.</p>
+
+  <a href="menu.html" class="menu-button">Bekijk ons Menu</a>
+
+  <!-- Slider -->
+  <div class="slider-container">
+    <div class="slider-track" id="slider">
+      <img src="sushi 1.0.jpg.jpg" alt="Sushi 1">
+      <img src="sushi 2.jpg" alt="Sushi 2">
+      <img src="sushi 3.jpg" alt="Sushi 3">
+      <img src="sushi 4.jpg" alt="Sushi 4">
+      <img src="sushi 5.jpg" alt="Sushi 5">
+      <img src="sushi 6.jpg" alt="Sushi 6">
+      <img src="sushi 7.jpeg" alt="Sushi 7">
+      <img src="sushi 8.jpeg" alt="Sushi 8">
+      <img src="sushi 9.jpeg" alt="Sushi 9">
+      <img src="sushi 10.jpeg" alt="Sushi 10">
+      <img src="sushi 11.jpeg" alt="Sushi 11">
+      <img src="sushi 12.jpeg" alt="Sushi 12">
+      <img src="sushi 13.jpeg" alt="Sushi 13">
+    </div>
+  </div>
+
+  <div class="dots-container" id="dots"></div>
+</main>
+
+<!-- Review Ticker -->
+<div class="review-ticker-section">
+  <h3>Wat onze klanten zeggen:</h3>
+  <div class="review-ticker">
+    <div class="review-ticker-content">
+      <span class="review">⭐⭐⭐⭐⭐ Shurandy Hoogezand: "Top sushi! Gratis rol geprobeerd, ik ben verkocht!"</span>
+      <span class="review">⭐⭐⭐⭐ Sylvana: "Altijd superverse en smaakvolle sushi!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Naomi Blanken: "Beste sushi ooit, verser dan vers!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Eline van der Velde: "Wij hadden sushi besteld voor ons personeelsfeestje. Heerlijk sushi en vers bereid door Adnan. 😁"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Daisy Piras: "Mega lekker gegeten, ingrediënten vers en knapperig!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Andy Strootman: "Voor het eerst besteld, erg goed. Kom zeker terug!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Mo Cher: "Perfect verzorgd, Allahuma bareek!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Marriet van Kampen: "Super verse sushi!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Samuel Omorogbe: "Altijd heerlijk vers!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Brian: "Topkwaliteit, top service."</span>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Taste of Sushi. Alle rechten voorbehouden.</p>
+</footer>
+
+<script>
+  const slider = document.getElementById('slider');
+  const dotsContainer = document.getElementById('dots');
+  const images = slider.querySelectorAll('img');
+  let index = 0;
+
+  // Create dots
+  images.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.classList.add('dot');
+    if (i === 0) dot.classList.add('active');
+    dotsContainer.appendChild(dot);
+  });
+
+  function showSlide(i) {
+    index = (i + images.length) % images.length;
+    slider.style.transform = `translateX(-${index * 100}%)`;
+    updateDots();
+  }
+
+  function nextSlide() {
+    showSlide(index + 1);
+  }
+
+  function updateDots() {
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+  }
+
+  setInterval(nextSlide, 5000);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

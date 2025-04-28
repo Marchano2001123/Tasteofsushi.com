@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Over ons | Taste of Sushi</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      height: 90px;
+    }
+
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 80px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #e63946;
+    }
+
+    p {
+      margin-bottom: 20px;
+      max-width: 700px;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    /* Review Ticker */
+    .review-ticker-section {
+      margin-top: 40px;
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 20px 0;
+      border-top: 2px solid #e63946;
+      border-bottom: 2px solid #e63946;
+      width: 100%;
+    }
+
+    .review-ticker-section h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #e63946;
+    }
+
+    .review-ticker {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .review-ticker-content {
+      display: inline-block;
+      padding-left: 100%;
+      animation: ticker 160s linear infinite;
+    }
+
+    @keyframes ticker {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .review {
+      display: inline-block;
+      margin-right: 80px;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    footer {
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html">
+    <img src="sushi.jpg.jpg" alt="Taste of Sushi Logo" class="logo">
+  </a>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="over ons.html">Over ons</a></li>
+      <li><a href="bestellen.html">Bestellen</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Over Taste of Sushi</h2>
+
+  <p>Bij Taste of Sushi draait alles om smaak, versheid en passie. Opgericht door Adnan Deniz, begonnen vanuit een liefde voor de Japanse keuken en vakmanschap.</p>
+
+  <p>Sinds mijn twaalfde experimenteer ik met sushi en heb ik mijn techniek jaar na jaar verfijnd.
+  Na drie jaar ervaring als chef, besloot ik mijn eigen weg in te slaan: verse sushi maken op bestelling, zonder concessies in kwaliteit.</p>
+
+  <p>Bij Taste of Sushi maken we elke rol vers op bestelling, zodat jij de échte smaak van sushi ervaart. Geen massaproductie, maar pure aandacht voor jouw bestelling.
+  Bovendien is al onze sushi Halal, zodat iedereen zorgeloos kan genieten.</p>
+
+  <p>Onze filosofie? “Do good and good will come to you.” Wij geloven dat liefde en zorg die je in je product stopt, vanzelf terugkomt.</p>
+
+  <p>Of je nu bestelt voor jezelf, een feest, of een hele catering: bij Taste of Sushi proef je het verschil in elke hap.</p>
+</main>
+
+<!-- Review Ticker -->
+<div class="review-ticker-section">
+  <h3>Wat onze klanten zeggen:</h3>
+  <div class="review-ticker">
+    <div class="review-ticker-content">
+      <span class="review">⭐⭐⭐⭐⭐ Shurandy Hoogezand: "Top sushi! Gratis rol geprobeerd, ik ben verkocht!"</span>
+      <span class="review">⭐⭐⭐⭐ Sylvana: "Altijd superverse en smaakvolle sushi!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Naomi Blanken: "Beste sushi ooit, verser dan vers!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Eline van der Velde: "Wij hadden sushi besteld voor ons personeelsfeestje. Heerlijk sushi en vers bereid door Adnan. 😁"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Daisy Piras: "Mega lekker gegeten, ingrediënten vers en knapperig!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Andy Strootman: "Voor het eerst besteld, erg goed. Kom zeker terug!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Mo Cher: "Perfect verzorgd, Allahuma bareek!"</span>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Taste of Sushi. Alle rechten voorbehouden.</p>
+</footer>
+
+</body>
+</html>

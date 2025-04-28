@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Taste of Sushi</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      height: 90px;
+    }
+
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 80px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      color: #e63946;
+    }
+
+    .menu-category {
+      margin-bottom: 50px;
+      width: 100%;
+      max-width: 700px;
+    }
+
+    .menu-category h3 {
+      border-bottom: 2px solid #e63946;
+      padding-bottom: 5px;
+      color: #e63946;
+      margin-bottom: 10px;
+    }
+
+    .menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      font-size: 1.1rem;
+    }
+
+    .prijzen {
+      margin-top: 10px;
+      font-style: italic;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .catering {
+      color: #e63946;
+      text-align: center;
+      margin-top: 2em;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Review Ticker */
+    .review-ticker-section {
+      margin-top: 40px;
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 20px 0;
+      border-top: 2px solid #e63946;
+      border-bottom: 2px solid #e63946;
+      width: 100%;
+    }
+
+    .review-ticker-section h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #e63946;
+    }
+
+    .review-ticker {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .review-ticker-content {
+      display: inline-block;
+      padding-left: 100%;
+      animation: ticker 160s linear infinite;
+    }
+
+    @keyframes ticker {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .review {
+      display: inline-block;
+      margin-right: 80px;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    footer {
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html">
+    <img src="sushi.jpg.jpg" alt="Taste of Sushi Logo" class="logo">
+  </a>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="over ons.html">Over ons</a></li>
+      <li><a href="bestellen.html">Bestellen</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Ons Menu</h2>
+
+  <section class="menu-category">
+    <h3>Softshell [8 stukjes]</h3>
+    <ul class="menu-list">
+      <li><span>Dubbel avocado zalm</span><span>€14,00</span></li>
+      <li><span>Dubbel zalm</span><span>€14,00</span></li>
+      <li><span>Ebi zalm rauw</span><span>€14,00</span></li>
+      <li><span>Ebi zalm geflambeerd</span><span>€14,00</span></li>
+      <li><span>Kip avocado</span><span>€14,00</span></li>
+      <li><span>Ebi unagi</span><span>€14,00</span></li>
+      <li><span>Ebi avocado</span><span>€14,00</span></li>
+    </ul>
+    <p class="prijzen">1 - €14,00 | 4 - €12,50 | 8 - €12,00</p>
+  </section>
+
+  <section class="menu-category">
+    <h3>Uramaki [8 stukjes]</h3>
+    <ul class="menu-list">
+      <li><span>Wasabi kip</span><span>€12,00</span></li>
+      <li><span>Knapperige kip</span><span>€12,00</span></li>
+      <li><span>Knapperige ebi</span><span>€12,00</span></li>
+      <li><span>Ebi rol</span><span>€12,00</span></li>
+      <li><span>Pittige ebi</span><span>€12,00</span></li>
+      <li><span>Sesam zalm</span><span>€12,00</span></li>
+      <li><span>Wasabi zalm</span><span>€12,00</span></li>
+    </ul>
+    <p class="prijzen">1 - €12,00 | 4 - €11,00 | 8 - €10,00</p>
+  </section>
+
+  <section class="menu-category">
+    <h3>Maki / Nigiri / Handroll</h3>
+    <ul class="menu-list">
+      <li><span>Zalm maki (8st)</span><span>€6,00</span></li>
+      <li><span>Avocado maki (8st)</span><span>€6,00</span></li>
+      <li><span>Ebi maki (8st)</span><span>€6,00</span></li>
+      <li><span>Komkommer maki (8st)</span><span>€6,00</span></li>
+      <li><span>Zalm nigiri (2st)</span><span>€3,00</span></li>
+      <li><span>Avocado nigiri (2st)</span><span>€3,00</span></li>
+      <li><span>Ebi nigiri (2st)</span><span>€3,00</span></li>
+      <li><span>Ebi handroll</span><span>€6,00</span></li>
+      <li><span>Zalm handroll</span><span>€6,00</span></li>
+    </ul>
+  </section>
+
+  <section class="menu-category">
+    <h3>Menu's</h3>
+    <ul class="menu-list">
+      <li><span>Duo to go</span><span>€55,00</span></li>
+      <li><span>4 the fam</span><span>€85,00</span></li>
+      <li><span>Crispy lovers</span><span>€26,00</span></li>
+      <li><span>Zalm lovers</span><span>€60,00</span></li>
+    </ul>
+  </section>
+
+  <section class="menu-category">
+    <h3>Appetizers</h3>
+    <ul class="menu-list">
+      <li><span>Chicken strips 3st</span><span>€6,00</span></li>
+      <li><span>Ebi tempura 3st</span><span>€6,00</span></li>
+      <li><span>Gyoza 5st</span><span>€6,50</span></li>
+    </ul>
+  </section>
+
+  <section class="menu-category">
+    <h3>Drinks</h3>
+    <ul class="menu-list">
+      <li><span>Redbull</span><span>€2,50</span></li>
+      <li><span>Fuzetea Green</span><span>€2,25</span></li>
+      <li><span>Sourcy Blauw</span><span>€2,25</span></li>
+    </ul>
+  </section>
+
+  <p class="catering">Wij doen ook aan catering!</p>
+</main>
+
+<!-- Review Ticker -->
+<div class="review-ticker-section">
+  <h3>Wat onze klanten zeggen:</h3>
+  <div class="review-ticker">
+    <div class="review-ticker-content">
+      <span class="review">⭐⭐⭐⭐⭐ Shurandy Hoogezand: "Top sushi! Gratis rol geprobeerd, ik ben verkocht!"</span>
+      <span class="review">⭐⭐⭐⭐ Sylvana: "Altijd superverse en smaakvolle sushi!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Naomi Blanken: "Beste sushi ooit, verser dan vers!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Eline van der Velde: "Wij hadden sushi besteld voor ons personeelsfeestje. Heerlijk sushi en vers bereid door Adnan. 😁"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Daisy Piras: "Mega lekker gegeten, ingrediënten vers en knapperig!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Andy Strootman: "Voor het eerst besteld, erg goed!"</span>
+      <span class="review">⭐⭐⭐⭐⭐ Mo Cher: "Perfect verzorgd, Allahuma bareek!"</span>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Taste of Sushi. Alle rechten voorbehouden.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+  
+
+
+
